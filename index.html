@@ -9,13 +9,13 @@
 </head>
 
 <body>
-  <div class="container my-5">
-    <div class="mx-auto w-50 text-center">
+  <div class="container-flued my-5">
+    <div class="row mx-auto text-center border">
       <h1>MobileNet 전이학습</h1>
       <p>카메라로 이미지를 비추고 start버튼을 클릭하면 분석합니다.</p>
       <p><button class="btn btn-outline-primary px-5" onclick="run()">start</button></p>
-      <div>
-        <video autoplay playesinline muted id="webcam" width="400" height="400"></video>
+      <div class="ratio ratio-16x9">
+        <video autoplay playesinline muted id="webcam"></video>
       </div>
       <div id="predictions" class="my-3"></div>
     </div>
